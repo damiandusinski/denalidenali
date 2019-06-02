@@ -1,0 +1,92 @@
+/* vars ============================================================== vars */
+:root {
+  --blue: rgb(85, 111, 205);
+}
+
+/* reset ============================================================== reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* wrapper ============================================================== wrapper */
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+/* top-bar ============================================================== top-bar */
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue);
+  height: 50px;
+  padding: 0 20px;
+}
+
+.text-logo {
+  font-size: 2.6rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.menu-icon {
+  position: relative;
+  height: 2px;
+  width: 28px;
+  background-color: #fff;
+}
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  height: 2px;
+  width: 28px;
+  background-color: #fff;
+}
+
+.menu-icon::after {
+  top: -8px;
+}
+
+nav {
+  position: absolute;
+}
+
+/* header ============================================================== header */
+
+header {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/hero-m.jpg") center;
+  background-size: cover;
+}
+
+.header-contact-container {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  padding: 25px 25px;
+  background-color: rgba(85, 111, 205, 0.6);
+  text-align: left;
+  color: #fff;
+}
+.main-head {
+  font-size: 3.2rem;
+  font-weight: 100;
+}
+.header-phone {
+  padding: 0 4px;
+  font-size: 2rem;
+  font-weight: 100;
+}
