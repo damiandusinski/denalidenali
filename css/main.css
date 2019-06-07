@@ -37,10 +37,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--blue);
   height: 50px;
   width: 100%;
   padding: 0 20px;
+  background-color: var(--blue);
 }
 
 .text-logo {
@@ -106,7 +106,10 @@ header {
 }
 
 /* offers ============================================================== offer */
-
+.offer-box {
+  background-color: #fff;
+  padding: 0 0 60px 0;
+}
 .offer-img {
   position: relative;
   overflow: hidden;
@@ -137,6 +140,7 @@ img {
   line-height: 1.5;
   text-align: justify;
 }
+
 .offer-list {
   padding: 5px 50px 0px;
   line-height: 1.5;
@@ -147,11 +151,24 @@ img {
   display: block;
   width: 150px;
   padding: 15px 25px;
-  margin: 30px auto 60px;
+  margin: 30px auto 0px;
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
   background-color: var(--blue);
+}
+/* -- Even offer style -- */
+.offers-container div:nth-of-type(even) .offer-container .btn {
+  background-color: #fff;
+  color: var(--blue);
+}
+
+.offers-container > div:nth-of-type(even) {
+  background-color: var(--blue);
+}
+.offers-container div:nth-of-type(even) .offer-container,
+.offers-container div:nth-of-type(even) .offer-container .offer-header {
+  color: #fff;
 }
