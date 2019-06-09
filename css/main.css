@@ -22,6 +22,17 @@ html {
   text-align: center;
   font-weight: 100;
 }
+
+/* section-text ============================================================== section-text */
+.offer-text,
+.about-us-text {
+  padding: 0 30px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+}
+
 /* wrapper ============================================================== wrapper */
 .wrapper {
   position: relative;
@@ -105,7 +116,7 @@ header {
   font-weight: 100;
 }
 
-/* offers ============================================================== offer */
+/* offers ============================================================== offers */
 .offer-box {
   background-color: #fff;
   padding: 0 0 60px 0;
@@ -131,14 +142,6 @@ img {
   font-size: 3.2rem;
   font-weight: 100;
   color: var(--blue);
-}
-
-.offer-text {
-  padding: 0 30px;
-  font-size: 1.7rem;
-  font-weight: 300;
-  line-height: 1.5;
-  text-align: justify;
 }
 
 .offer-list {
@@ -171,4 +174,14 @@ img {
 .offers-container div:nth-of-type(even) .offer-container,
 .offers-container div:nth-of-type(even) .offer-container .offer-header {
   color: #fff;
+}
+/* about-us ============================================================== about-us */
+.about-us-container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../img/about-us-s.jpg") center;
+  background-size: cover;
+  padding: 0 0 60px 0;
 }
