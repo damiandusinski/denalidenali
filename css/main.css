@@ -185,3 +185,25 @@ img {
   background-size: cover;
   padding: 0 0 60px 0;
 }
+
+/* features ============================================================== features */
+.features-box {
+  text-align: center;
+  padding: 0 30px 60px 30px;
+}
+.feature-box + .feature-box {
+  padding: 5px 0;
+}
+.feature-box + .feature-box {
+  margin-top: 20px;
+}
+.feature-header {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.feature-text {
+  margin-top: 3px;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
