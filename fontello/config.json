@@ -19,18 +19,6 @@
       "src": "linecons"
     },
     {
-      "uid": "4b7f817f780705a5d267ad59e855da91",
-      "css": "graduation-cap",
-      "code": 59393,
-      "src": "linecons"
-    },
-    {
-      "uid": "9fecfcfe680a469caedeeb40641a479f",
-      "css": "handshake-o",
-      "code": 62133,
-      "src": "fontawesome"
-    },
-    {
       "uid": "44a0e2660ac966cdfaa04deb6aac51df",
       "css": "shield",
       "code": 61746,
@@ -41,6 +29,18 @@
       "css": "stopwatch",
       "code": 59394,
       "src": "typicons"
+    },
+    {
+      "uid": "e2d87e7631c608efe71762a9f4c95e75",
+      "css": "check",
+      "code": 59393,
+      "src": "elusive"
+    },
+    {
+      "uid": "ef74ff62feda486fd414410e782b598a",
+      "css": "graduation-cap-1",
+      "code": 59395,
+      "src": "entypo"
     }
   ]
 }
