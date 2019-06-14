@@ -350,6 +350,9 @@ footer {
   text-transform: uppercase;
   font-size: 2.2rem;
 }
+.content-container-offers {
+  padding-bottom: 0;
+}
 
 .roof {
   background: url("../img/roof-s.jpg") center;
