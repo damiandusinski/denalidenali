@@ -43,7 +43,6 @@ html {
 
 .menu-bar {
   position: fixed;
-  top: 0;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -81,7 +80,25 @@ html {
 }
 
 nav {
-  position: absolute;
+  position: abslolut;
+}
+
+/* menu ============================================================== menu */
+nav
+/* .active */
+ {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 400px;
+}
+.menu-bar
+/* .active */
+ {
+  top: 400px;
 }
 
 /* header ============================================================== header */
