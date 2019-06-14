@@ -40,8 +40,9 @@ html {
   margin: 0 auto;
 }
 /* top-bar ============================================================== top-bar */
+/*menu-bar ============================================================== menu-bar*/
 
-nav {
+.menu-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +50,7 @@ nav {
   z-index: 1;
 }
 
-.menu-bar {
+.menu-top {
   position: relative;
   display: flex;
   align-items: center;
@@ -95,12 +96,12 @@ nav {
   top: -8px;
 }
 
-nav > ul.menu {
+.menu {
   position: relative;
-  top: -500px;
+  top: -400px;
   background-color: #eee;
   box-shadow: 0 2px 5px #666;
-  transition: all 0.8s ease-out;
+  transition: all 0.6s ease-out;
   z-index: -1;
   opacity: 0;
 }
@@ -129,26 +130,21 @@ nav > ul > li > a.active-page {
 
 /* menu-active ============================================================== menu-active*/
 
-.menu-bar.active {
-  position: relative;
-  bottom: 0;
-}
-nav > ul.active {
-  display: block;
-  top: 0;
+nav.menu.active {
+  top: 0px;
   opacity: 1;
 }
-.menu-bar.active .menu-btn .menu-icon {
+.menu-top.active .menu-btn .menu-icon {
   background-color: transparent;
 }
-.menu-bar.active .menu-btn .menu-icon::before,
-.menu-bar.active .menu-btn .menu-icon::after {
+.menu-top.active .menu-btn .menu-icon::before,
+.menu-top.active .menu-btn .menu-icon::after {
   top: 0;
   transform: rotate(40deg);
   transition: top 0.2s, transform 0.2s ease-in 0.2s;
 }
 
-.menu-bar.active .menu-btn .menu-icon::after {
+.menu-top.active .menu-btn .menu-icon::after {
   transform: rotate(-40deg);
 }
 /* header ============================================================== header */
