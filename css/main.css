@@ -334,3 +334,35 @@ footer {
   color: #c4302b;
   margin-right: 5px;
 }
+
+/*### site offers ###*/
+.offer-page-box {
+  height: 300px;
+  background-size: cover;
+}
+.offer-page-box > a {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  line-height: 300px;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.roof {
+  background: url("../img/roof-s.jpg") center;
+}
+.winter {
+  background: url("../img/winter-s.jpg") center;
+}
+.courses {
+  background: url("../img/courses-s.jpg") center;
+}
+.rent {
+  background: url("../img/rent-s.jpg") center;
+}
+.other {
+  background: url("../img/other-s.jpg") center;
+}
