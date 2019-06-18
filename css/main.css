@@ -36,7 +36,8 @@ html {
 /* section-text ============================================================== section-text */
 .offer-text,
 .about-us-text,
-.content-text {
+.content-text,
+.offer-text-page {
   padding: 0 30px;
   font-size: 1.7rem;
   font-weight: 300;
@@ -59,6 +60,7 @@ html {
   left: 0;
   right: 0;
   z-index: 1;
+  height: 0;
 }
 
 .menu-top {
@@ -382,8 +384,83 @@ footer {
   letter-spacing: 0.4px;
 }
 
-i.fa-facebook-square {
+a > i.fa-facebook-square {
   margin-top: 30px;
   font-size: 6rem;
   color: #3b5998;
+}
+
+/* ### offer-page ### */
+
+.offers-details-head {
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/courses-l.jpg") center;
+  background-size: cover;
+}
+.offers-details-head.other {
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/other-l.jpg") center;
+  background-size: cover;
+}
+.offers-details-head.roof {
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/roof-l.jpg") center;
+  background-size: cover;
+}
+.offers-details-head.winter {
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/winter-l.jpg") center;
+  background-size: cover;
+}
+.head-offer-detail {
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  font-size: 3.4rem;
+}
+
+.offer-details-box {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px;
+  border-bottom: 50px solid rgb(85, 111, 205);
+}
+.offer-details-box:last-child {
+  border-bottom: 50px solid #fff;
+}
+
+.offer-details-box ul {
+  padding-top: 25px;
+}
+
+.offer-details-box ul li {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: #ddd;
+  color: #000;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.offer-details-box ul li:nth-child(odd) {
+  background-color: #eee;
+}
+
+.offer-details-box h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3.2rem;
+  margin: 25px 0;
+}
+
+.offer-text-s-page {
+  margin-top: 15px;
+  padding: 0 30px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
 }
