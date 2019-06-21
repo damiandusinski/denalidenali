@@ -54,7 +54,7 @@ html {
 /* top-bar ============================================================== top-bar */
 /*menu-bar ============================================================== menu-bar*/
 
-.menu-container {
+.top-bar-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -62,9 +62,14 @@ html {
   z-index: 1;
   height: 0;
 }
+.menu-container {
+  height: 0;
+}
+.top-bar {
+  display: none;
+}
 
 .menu-top {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -161,6 +166,85 @@ nav.menu.active {
 .menu-top.active .menu-btn .menu-icon::after {
   transform: rotate(-40deg);
 }
+
+/*                                                                Menu media */
+@media (min-width: 1024px) {
+  .menu-top {
+    display: none;
+    z-index: 2;
+  }
+  .top-bar {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--blue);
+  }
+  .top-bar > a {
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    z-index: 3;
+  }
+  img.top-logo {
+    height: 150px;
+
+    position: relative;
+  }
+  .top-bar-contact {
+    display: flex;
+  }
+  .top-bar-phone,
+  .top-bar-mail,
+  .top-bar-social {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .top-bar-social {
+    padding-left: 0;
+  }
+  .top-bar-phone {
+    background-color: rgb(65, 91, 185);
+  }
+  .top-bar-social > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  .menu {
+    top: 0;
+    opacity: 1;
+    box-shadow: none;
+    z-index: 2;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+  }
+
+  nav > ul > li > a,
+  nav > ul > li > a.active-page {
+    position: relative;
+    padding: 15px 15px;
+    border-bottom: none;
+  }
+  nav > ul > li > a.active-page {
+    background-color: #eee;
+  }
+}
+nav > ul > li > a.active-page::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  height: 5px;
+  width: 100%;
+  background: var(--blue);
+}
+
 /* header ============================================================== header */
 
 header {
@@ -172,7 +256,6 @@ header {
     url("../img/hero-m.jpg") center;
   background-size: cover;
 }
-
 .header-contact-container {
   position: absolute;
   bottom: 18%;
@@ -189,10 +272,16 @@ header {
 }
 .header-phone {
   padding: 0 4px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 100;
 }
+/*                                                                Header media */
 
+@media (min-width: 1024px) {
+  header {
+    margin-top: 111px;
+  }
+}
 /* offers ============================================================== offers */
 .offer-box {
   background-color: #fff;
@@ -204,7 +293,7 @@ header {
   width: 100%;
   height: 260px;
 }
-img {
+.offer-img > img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -309,6 +398,8 @@ img {
   margin-top: 5px;
 }
 
+/*                             mednia contact */
+
 /* footer ============================================================== footer */
 footer {
   text-align: center;
@@ -335,6 +426,14 @@ footer {
 .about-us-movie a i {
   color: #c4302b;
   margin-right: 5px;
+}
+
+/*                                        media about-us */
+@media (min-width: 1024px) {
+  .about-us-page-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 /*### site offers ###*/
@@ -371,6 +470,32 @@ footer {
 .other {
   background: url("../img/other-s.jpg") center;
 }
+
+/*                                                  media offers */
+
+@media (min-width: 768px) {
+  .offers-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .offer-page-box {
+    flex-basis: 49.7%;
+    margin-bottom: 3px;
+  }
+  .offer-page-box:last-child {
+    flex-basis: 99.7%;
+  }
+}
+@media (min-width: 1024px) {
+  .offers-page-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 /*### site contact ###*/
 .business-card {
   margin-top: 40px;
@@ -384,12 +509,23 @@ footer {
   letter-spacing: 0.4px;
 }
 
-a > i.fa-facebook-square {
+a.contact-page-social > i.fa-facebook-square {
   margin-top: 30px;
   font-size: 6rem;
   color: #3b5998;
 }
-
+/*                                      media contact */
+@media (min-width: 1024px) {
+  .contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .business-card {
+    margin: 0;
+  }
+}
 /* ### offer-page ### */
 
 .offers-details-head {
@@ -463,4 +599,12 @@ a > i.fa-facebook-square {
   font-size: 1.4rem;
   line-height: 1.5;
   text-align: center;
+}
+
+/*                              media offer page */
+@media (min-width: 1024px) {
+  .offers-details {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
