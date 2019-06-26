@@ -445,9 +445,6 @@ header {
   .about-us-container {
     padding: 0 50px 60px 50px;
   }
-  .about-us-text {
-    text-align: center;
-  }
 }
 @media (min-width: 1280px) {
   .about-us-container {
@@ -728,7 +725,7 @@ a.contact-page-social > i.fa-facebook-square {
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px;
-  border-bottom: 50px solid rgb(85, 111, 205);
+  border-bottom: 10px solid rgb(85, 111, 205);
 }
 .offer-details-box:last-child {
   border-bottom: 50px solid #fff;
