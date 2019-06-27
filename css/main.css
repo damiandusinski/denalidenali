@@ -173,7 +173,6 @@ nav.menu.active {
 @media (min-width: 1024px) {
   .menu-top {
     display: none;
-    z-index: 2;
   }
 
   .top-bar {
@@ -387,7 +386,7 @@ header {
   color: #fff;
 }
 
-/*                                media offers */
+/*                                                                Offer media */
 @media (min-width: 1024px) {
   .offer-box {
     display: flex;
@@ -440,7 +439,7 @@ header {
   padding: 0 0 60px 0;
 }
 
-/*                        media about-us */
+/*                                                                About-us media */
 @media (min-width: 768px) {
   .about-us-container {
     padding: 0 50px 60px 50px;
@@ -486,7 +485,7 @@ header {
   font-weight: 100;
 }
 
-/*                            feature media */
+/*                                                                Features media */
 @media (min-width: 800px) {
   .features-box {
     display: flex;
@@ -553,8 +552,6 @@ header {
   margin-top: 5px;
 }
 
-/*                             mednia contact */
-
 /* footer ============================================================== footer */
 footer {
   text-align: center;
@@ -583,7 +580,7 @@ footer {
   margin-right: 5px;
 }
 
-/*                                        media about-us */
+/*                                                                About-us-page media */
 @media (min-width: 1024px) {
   .about-us-page-container {
     max-width: 1024px;
@@ -627,7 +624,7 @@ footer {
   background: url("../img/other-s.jpg") center;
 }
 
-/*                                                  media offers */
+/*                                                                Offers-page media */
 
 @media (min-width: 768px) {
   .offers-page-container {
@@ -677,7 +674,7 @@ a.contact-page-social > i.fa-facebook-square {
   font-size: 6rem;
   color: #3b5998;
 }
-/*                                      media contact */
+/*                                                                Contact-page media */
 @media (min-width: 1024px) {
   .contact-page {
     max-width: 800px;
@@ -714,11 +711,6 @@ a.contact-page-social > i.fa-facebook-square {
   line-height: 150px;
   color: #fff;
   font-size: 3.4rem;
-}
-@media (min-width: 1024px) {
-  .head-offer-detail {
-    font-size: 4rem;
-  }
 }
 
 .offer-details-box {
@@ -763,10 +755,13 @@ a.contact-page-social > i.fa-facebook-square {
   text-align: center;
 }
 
-/*                              media offer page */
+/*                                                                Offer-page media */
 @media (min-width: 1024px) {
   .offers-details {
     max-width: 1024px;
     margin: 0 auto;
+  }
+  .head-offer-detail {
+    font-size: 4rem;
   }
 }
